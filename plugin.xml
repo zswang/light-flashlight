@@ -21,6 +21,11 @@
                 <param name="android-package" value="com.baidu.light.flashlight.Flashlight"/>
             </feature>
         </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.FLASHLIGHT" />
+        </config-file>
 
         <source-file src="src/android/Flashlight.java" target-dir="src/com/baidu/light/flashlight" />
     </platform>
