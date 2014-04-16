@@ -1,0 +1,14 @@
+{
+    "version": "0.2.7",
+    "name": "com.baidu.light.flashlight",
+    "cordova_name": "Flashlight",
+    "description": "Cordova Flashlight Plugin",
+    "license": "Apache 2.0",
+    "repo": "https://github.com/zswang/light-flashlight.git",
+    "issue": "https://github.com/zswang/light-flashlight/issues",
+    "keywords": [
+        "cordova",
+        "flashlight"
+    ],
+    "engines": []
+}

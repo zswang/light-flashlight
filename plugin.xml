@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+      id="com.baidu.light.flashlight"
+      version="0.2.7">
+    <name>Flashlight</name>
+    <description>Cordova Flashlight Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,battery</keywords>
+    <repo>https://github.com/zswang/light-flashlight.git</repo>
+    <issue>https://github.com/zswang/light-flashlight/issue</issue>
+
+    <js-module src="www/flashlight.js" name="flashlight">
+        <clobbers target="Light.flashlight" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Flashlight" >
+                <param name="android-package" value="com.baidu.light.flashlight.Flashlight"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Flashlight.java" target-dir="src/com/baidu/light/flashlight" />
+    </platform>
+
+</plugin>
