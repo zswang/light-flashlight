@@ -11,7 +11,7 @@
     <issue>https://github.com/zswang/light-flashlight/issue</issue>
 
     <js-module src="www/flashlight.js" name="flashlight">
-        <clobbers target="Light.flashlight" />
+        <clobbers target="light.flashlight" />
     </js-module>
     
     <!-- android -->
